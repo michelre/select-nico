@@ -1,0 +1,64 @@
+.select-container {
+    position: relative;
+}
+
+.select-container button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    border-radius: 3px;
+    border-radius: 3px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.select-container button.opened {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.select-container button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-container button::after {
+    content: '';
+    background-image: url('../../assets/icons.png');
+    background-position: -65px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.select-options {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #c5c5c5;
+    display: none;
+    position: absolute;
+    top: 33px;
+    background: white;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.select-options.show {
+    display: block;
+}
+
+.select-options li {
+    padding: 3px 4px;
+}
+
+.select-options li.selected, .select-options li:hover {
+    border: 1px solid #003eff;
+    background: #007fff;
+    font-weight: normal;
+    color: #ffffff;
+}
