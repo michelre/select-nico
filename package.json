@@ -1,11 +1,16 @@
 {
   "name": "select-nico",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "type": "module",
-  "main": "dist/main.js",
+  "main": "dist/select-nico.js",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/select-nico.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

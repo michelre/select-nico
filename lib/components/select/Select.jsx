@@ -15,7 +15,7 @@ const Select = ({options, onChange, selected}) => {
     }
 
     return <div className="select-container">
-        <button onClick={onOpen}>{selected.label}</button>
+        <button onClick={onOpen}>{selected.label}</button>        
         <ul className={`select-options ${isOpen ? 'show' : ''}`}>
             {options.map((option) => <li 
                 key={option.value} 

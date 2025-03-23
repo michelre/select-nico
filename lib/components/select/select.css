@@ -27,10 +27,11 @@
 
 .select-container button::after {
     content: '';
-    background-image: url('../../assets/icons.png');
-    background-position: -65px -16px;
-    width: 16px;
-    height: 16px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVR4nO3QMQqAQAxE0X8JxfvfQ2vFzsbjKIJbitlNos18GEj3IKCUUsrRBBzBGy3wkgDPFrgDtkB0Bwbru6PwKjQKb0K9uAttxUPQWjwUteIp6Bueij7hn6ClHljvXbdSit86AUl3ltPxBzVwAAAAAElFTkSuQmCC);
+    background-position: center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
 }
 
 .select-options {
